@@ -184,6 +184,32 @@ header a:hover{color: rgb(226, 223, 60);}
 .links a:hover,.content a:hover{color:rgb(226, 223, 60);}
 /*===flag section end===*/
 
+/*===clients section start===*/
+.clients{margin: 100px 0px 100px 0px;}
+.clients .wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+/*===clients section end===*/
+
+/*===information section start===*/
+.button{
+  text-transform: uppercase;
+  padding: 10px;
+  border: 2px solid #92ebe6;
+  border-radius: 20px;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  width: 170px;
+  text-align: center;
+}
+.information h3{
+  text-transform: capitalize;
+}
+
+/*===information section end===*/
+
 /*=================================
   main styling ends here
 =================================*/

@@ -140,6 +140,7 @@ header a:hover{color: rgb(226, 223, 60);}
   font-weight: bold;
   margin-top: 20%;
 }
+.features a:hover{color: #b11010;}
 .sponsor{
   text-transform: capitalize;
   font-size: small;
@@ -210,6 +211,10 @@ header a:hover{color: rgb(226, 223, 60);}
   width: 170px;
   text-align: center;
 }
+.button:hover{
+  background-color: #b11010;
+  color: #ffffff;
+}
 .information h3{
   text-transform: capitalize;
   font-size: 35px;
@@ -223,11 +228,13 @@ header a:hover{color: rgb(226, 223, 60);}
   margin-bottom: 30px;
 }
 
-
 /*===information section end===*/
 
 /*===article section start===*/
-.articles .wrapper{background-color: rgb(226, 222, 216); }
+.articles{margin: 60px 0px 60px 0px;}
+.articles .wrapper{
+  background-color: rgb(226, 222, 216); 
+}
 .articles_box{
   display: flex;
   justify-content: space-around;
@@ -250,21 +257,50 @@ header a:hover{color: rgb(226, 223, 60);}
 /*=================================
   footer styling starts here
 =================================*/ 
+footer{
+  background-color: rgb(37, 36, 36);
+  border-top: 7px solid #b11010;
+  padding: 30px 0px 30px 0px; 
+}
+.block_one li{
+  display: block;
+  margin-bottom: 20px;
+}
+.block_three li{
+  display: block;
+  margin-bottom: 20px;
+}
+.block-two li{display: block;}
+.block_three li{display: block;}
+.block_one a{
+  color: #e7e1e1;
+  text-transform: capitalize;
+}
+.block-two li{
+  color: #a09c9c;
+  font-size: small;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.block-two a{
+  color: #ffffff;
+  padding: 20px 20px;
+}
+.block_three a{
+  font-size: small;
+  text-transform: capitalize;
+  color: #a09c9c;
+}
 
-
-
-
-
-
+.copyright{text-align: center;}
+.copyright > p{color: #a09c9c;}
+.copyright p:last-child{
+  font-style: italic;
+  font-size: small;
+  color: #a09c9c;
+}
+hr{margin: 30px 0px 30px 0px;}
 
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  

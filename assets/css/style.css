@@ -193,6 +193,9 @@ header a:hover{color: rgb(226, 223, 60);}
 /*===clients section end===*/
 
 /*===information section start===*/
+.information{
+  margin-bottom: 50px;
+}
 .button{
   text-transform: uppercase;
   padding: 10px;
@@ -206,7 +209,17 @@ header a:hover{color: rgb(226, 223, 60);}
 }
 .information h3{
   text-transform: capitalize;
+  font-size: 35px;
+  font-weight: bold;
+  width: 70%;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
+.information p{
+  font-size: small;
+  margin-bottom: 30px;
+}
+.blog_two .button{margin-top: 30px;}
 
 /*===information section end===*/
 

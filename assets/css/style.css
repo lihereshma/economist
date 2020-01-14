@@ -106,12 +106,19 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
-
-
-
+header{background-color: rgb(61, 60, 60);}
+header .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+header a{
+  color: rgb(192, 189, 186);
+  text-transform: capitalize;
+  padding: 0px 20px 0px 20px;
+  font-size: small;
+}
+header a:hover{color: rgb(226, 223, 60);}
+.second_box{margin-top: 45px;}
 /*=================================
   Header styling ends here
 =================================*/  
@@ -120,12 +127,29 @@ li {
   main styling starts here
 =================================*/
 
+/*===advertiesment article start===*/
+.adevertisement .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
+.features a{
+  text-transform: uppercase;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  margin-top: 20%;
+}
+.sponsor{
+  text-transform: capitalize;
+  font-size: small;
+  color: rgb(124, 122, 120);
+}
+/*===advertiesment article start===*/
 
+/*===flag section start===*/
 
-
-
-
-
+/*===flag section end===*/
 
 /*=================================
   main styling ends here

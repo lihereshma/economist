@@ -108,8 +108,14 @@ li {
 =================================*/
 header .navigation{background-color: rgb(61, 60, 60);}
 .logo{float: left;}
-.right_nav{float: right;}
-.left_nav{float: left;}
+.right_nav{
+  float: right;
+  margin-top: 40px;
+}
+.left_nav{
+  float: left;
+  margin-top: 40px;
+}
 header a{
   color: rgb(192, 189, 186);
   text-transform: capitalize;
@@ -118,6 +124,10 @@ header a{
 }
 .topics_dropdown a:after,.more_dropdown a:after,.login a:last-child:after{
   content:"\f107";
+  font-family: FontAwesome;
+}
+.search a:before{
+  content:"\f002";
   font-family: FontAwesome;
 }
 .login a:first-child:before{
@@ -153,7 +163,7 @@ header .navigation:after{
   color: black;
   font-size: small;
   font-weight: bold;
-  margin-top: 20%;
+  margin-top: 20px;
 }
 .features a:hover{color: #b11010;}
 .sponsor{
@@ -162,20 +172,26 @@ header .navigation:after{
   color: rgb(124, 122, 120);
   display: flex;
 }
-/*===advertiesment article start===*/
+.sponsor span{margin-top: 45px;}
+.sponsor figure{
+  border-left: 2px solid #5b12d1;
+  margin-left: 10px;
+}
+/*===advertiesment article end===*/
 
 /*=================================
   main styling starts here
 =================================*/
 
-/*===flag section start===*/
-.flag{
+/*===banner section start===*/
+.banner{
   background-color: black;
   color: #ffffff;
 }
-.flag .wrapper{
+.banner .wrapper{
   display: flex;
   padding: 30px 0px 30px 0px;
+  justify-content: space-between;
 }
 .links{padding: 20px 20px;}
 .links a{
@@ -183,11 +199,15 @@ header .navigation:after{
   border: 2px solid #ffffff;
   border-radius: 100%;
   padding: 10px;
-  margin-top: 285px;
+  margin-top: 470px;
+}
+.links span{
+  position: absolute;
+  transform: translate(-900px,-900px);
 }
 .content{
   text-align: center;
-  width: 60%;
+  width: 40%;
 }
 .content h2{
   text-transform: capitalize;
@@ -195,15 +215,18 @@ header .navigation:after{
   font-size: 50px;
   margin-bottom: 10px;
 }
-.content p{
+.content span{
   text-transform: capitalize;
   font-size: 25px;
   margin-bottom: 40px;
   margin-top: 10px;
+  display: block;
 }
 .content a{color: #ffffff;}
 .links a:hover,.content a:hover{color:rgb(226, 223, 60);}
-/*===flag section end===*/
+
+.banner_image{margin-top: 350px;}
+/*===banner section end===*/
 
 /*===clients section start===*/
 .clients{
@@ -214,12 +237,14 @@ header .navigation:after{
   display: flex;
   justify-content: space-around;
 }
+
 /*===clients section end===*/
 
-/*===information section start===*/
+/*===information article start===*/
 .information{
   margin-bottom: 50px;
 }
+.article_one,.article_two{padding: 30px 30px;}
 .button{
   text-transform: uppercase;
   padding: 10px;
@@ -230,6 +255,7 @@ header .navigation:after{
   font-weight: bold;
   width: 170px;
   text-align: center;
+  margin-top: 30px;
 }
 .button:hover{
   background-color: #b11010;
@@ -244,11 +270,23 @@ header .navigation:after{
   margin-top: 50px;
 }
 .information p{
-  font-size: small;
+  font-size: 15px;
   margin-bottom: 30px;
+  max-width: 90%;
+  color: #474444;
 }
-
-/*===information section end===*/
+.article_one a:after,.article_two a:first-of-type:after{
+  content:" \f067";
+  font-family: FontAwesome;
+}
+.article_two a:last-child:after{
+  content:" \f019";
+  font-family: FontAwesome;
+}
+.article_two a:last-child{
+  width: 20%;
+}
+/*===information article end===*/
 
 /*===article section start===*/
 .articles{margin: 60px 0px 60px 0px;}

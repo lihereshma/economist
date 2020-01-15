@@ -288,25 +288,41 @@ header .navigation:after{
 }
 /*===information article end===*/
 
-/*===article section start===*/
+/*===articles article start===*/
 .articles{margin: 60px 0px 60px 0px;}
 .articles .wrapper{
-  background-color: rgb(226, 222, 216); 
-}
-.articles_box{
+  background-color: rgb(226, 222, 216);
   display: flex;
   justify-content: space-around;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 50px 0px; 
 }
-.articles_box span{
+.articles .heading{  display: flex;}
+.heading span{
+  font-size: small;
+  margin-top: 40px;
+}
+.heading figure img{margin-left: 30px;}
+.heading img{
+  border-left: 2px solid #5b12d1;
+  margin-left: 60px;
+}
+.articles span{
   text-transform: capitalize;
   font-weight: bold;
 }
-.articles_box img{
-  margin:20px 0px 20px 0px;
+.articles img{
+  margin:10px 0px 10px 0px;
 }
-.articles_box p{font-size: small;}
-/*===article section end===*/
+.article_content a:last-child:after{
+  content:" \f054";
+  font-family: FontAwesome;
+}
+.article_content span{
+  font-size: 15px;
+  color: #474444;
+  display: block;
+  font-size: small;}
+/*===articles article end===*/
 
 /*=================================
   main styling ends here

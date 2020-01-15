@@ -106,32 +106,47 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header h1,.left_nav,.right_nav{background-color: rgb(61, 60, 60);}
-header .wrapper{
-  display: flex;
-  justify-content: space-between;
-}
+header .navigation{background-color: rgb(61, 60, 60);}
+.logo{float: left;}
+.right_nav{float: right;}
+.left_nav{float: left;}
 header a{
   color: rgb(192, 189, 186);
   text-transform: capitalize;
   padding: 0px 20px 0px 20px;
   font-size: small;
 }
-header a:hover{color: rgb(226, 223, 60);}
-.second_box{margin-top: 45px;}
+.topics_dropdown a:after,.more_dropdown a:after,.login a:last-child:after{
+  content:"\f107";
+  font-family: FontAwesome;
+}
+.login a:first-child:before{
+  content:"\f007";
+  font-family: FontAwesome;
+}
+header .navigation a:hover{color: rgb(226, 223, 60);}
+header .navigation:after{
+  content:"";
+  clear:both;
+  display: table;
+}
+
+
 /*=================================
   Header styling ends here
 =================================*/  
 
-/*=================================
-  main styling starts here
-=================================*/
+
 
 /*===advertiesment article start===*/
-.adevertisement .wrapper{
+.advertisement{
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 0px;
+}
+.features a:after{
+  content:"\f054";
+  font-family: FontAwesome;
 }
 .features a{
   text-transform: uppercase;
@@ -145,8 +160,13 @@ header a:hover{color: rgb(226, 223, 60);}
   text-transform: capitalize;
   font-size: small;
   color: rgb(124, 122, 120);
+  display: flex;
 }
 /*===advertiesment article start===*/
+
+/*=================================
+  main styling starts here
+=================================*/
 
 /*===flag section start===*/
 .flag{

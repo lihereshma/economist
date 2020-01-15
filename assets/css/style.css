@@ -107,14 +107,21 @@ li {
   Header styling starts here
 =================================*/
 header .navigation{background-color: rgb(61, 60, 60);}
-.logo{float: left;}
+.logo{
+  float: left;
+  height: 100%;
+  display: flex;
+}
+
 .right_nav{
   float: right;
-  margin-top: 40px;
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 .left_nav{
   float: left;
-  margin-top: 40px;
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
 header a{
   color: rgb(192, 189, 186);
@@ -157,7 +164,7 @@ header .navigation:after{
 
 
 /*===advertiesment article start===*/
-.advertisement{
+.advertisement .wrapper{
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 0px;
@@ -195,25 +202,42 @@ header .navigation:after{
 .banner{
   background-color: black;
   color: #ffffff;
-}
-.banner .wrapper{
   display: flex;
-  padding: 30px 0px 30px 0px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.links{padding: 20px 20px;}
+.links{
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.banner_image{
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
 .links a{
   color:#ffffff;
   border: 2px solid #ffffff;
   border-radius: 100%;
   padding: 10px;
   margin-top: 470px;
+  margin: 5px 5px;
 }
 .links span{
   position: absolute;
   transform: translate(-900px,-900px);
 }
 .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 50%;
 }
@@ -230,7 +254,11 @@ header .navigation:after{
   margin-top: 10px;
   display: block;
 }
-.content a{color: #ffffff;}
+.content a{
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+}
 .links a:hover,.content a:hover{color:rgb(226, 223, 60);}
 
 .banner_image{margin-top: 350px;}
@@ -252,7 +280,7 @@ header .navigation:after{
 .information{
   margin-bottom: 50px;
 }
-.article_one,.article_two{padding: 30px 30px;}
+
 .button{
   text-transform: uppercase;
   padding: 10px;
@@ -283,15 +311,16 @@ header .navigation:after{
   max-width: 90%;
   color: #474444;
 }
-.article_one a:after,.article_two a:first-of-type:after{
+
+.information_one a:after,.information_two a:first-of-type:after{
   content:" \f067";
   font-family: FontAwesome;
 }
-.information .article_two a:last-child:after{
+.information_two a:last-child:after{
   content:" \f019";
   font-family: FontAwesome;
 }
-.information .article_two a:last-child{
+.information_two a:last-child{
   width: 20%;
   float: right;
 }
@@ -299,6 +328,7 @@ header .navigation:after{
 
 /*===articles article start===*/
 .articles{margin: 60px 0px 60px 0px;}
+.article_one,.article_two{padding: 30px 30px;}
 .articles .wrapper{
   background-color: rgb(226, 222, 216);
   display: flex;
@@ -328,7 +358,10 @@ header .navigation:after{
   display: block;
   font-size: small;
 }
-
+.articles a:after{
+  content:" \f054";
+  font-family: FontAwesome;
+}
 /*===articles article end===*/
 
 /*=================================
@@ -385,6 +418,9 @@ footer a:hover{color: rgb(226, 223, 60);}
   text-transform: capitalize;
   color: #a09c9c;
 }
+.block_one{width: 20%;}
+.block_two{width: 70%;}
+.block_three{width: 30%;}
 
 .copyright{
   text-align: center;

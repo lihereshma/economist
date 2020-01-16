@@ -106,258 +106,258 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header .navigation{background-color: rgb(61, 60, 60);}
-.logo{
-  float: left;
-  height: 100%;
+.upper_header{ background-color: #383e43; }
+.logo a{ text-indent: -9999px; }
+.logo img{ height: 100%; }
+.left_nav,.right_nav{ margin-top: 20px; }
+.navigation a:hover{ color: #e8e861; }
+
+.logo{ 
   display: flex;
+  float: left; 
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
 }
 
-.right_nav{
-  float: right;
-  margin-top: 16px;
-  margin-bottom: 20px;
+.navigation a{
+  padding: 0px 20px;
+  color: #b7b6b6;
+  font-size: 20px;
+  text-transform: capitalize;   
 }
-.left_nav{
-  float: left;
-  margin-top: 16px;
-  margin-bottom: 20px;
-}
-header a{
-  color: rgb(192, 189, 186);
-  text-transform: capitalize;
-  padding: 0px 20px 0px 20px;
-  font-size: small;
-}
+
 .topics_dropdown a:after,.more_dropdown a:after,.login a:last-child:after{
-  content:"\f107";
+  content:" \f107";
   font-family: FontAwesome;
 }
+
 .search form:before{
-  content:"\f002";
-  font-family: FontAwesome;
+  color:#b7b6b6;
+  content:" \f002";
+  font-family: FontAwesome; 
 }
+
 .search input[type="text"]{
-  color: rgb(192, 189, 186);
-  text-transform: capitalize;
-  font-size: small;
-  background-color: rgb(61, 60, 60);
   border: none;
+  background-color: #383e43;
+  color: #b7b6b6;
+  font-size: medium;
+  text-transform: capitalize; 
 }
 .login a:first-child:before{
-  content:"\f007";
+  content:" \f007";
   font-family: FontAwesome;
 }
-header .navigation a:hover{color: rgb(226, 223, 60);}
-.search:hover{color: rgb(226, 223, 60);}
-header .navigation:after{
-  content:"";
-  clear:both;
+
+.upper_header:after{
+  content: "";
+  clear: both;
   display: table;
 }
 
+/*===advertiesment section styling start===*/
+.features a:hover{ color: #ff0000; }
+.sponsor span{ margin-top: 45px; }
+
+.advertisement .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 0;
+}
+
+.features a{
+  margin-top: 20px;
+  color: black;  
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;   
+}
+
+.features a:after{
+  content:"  \f054";
+  font-family: FontAwesome;
+}
+
+.sponsor{
+  display: flex;
+  color: #b7b6b6;
+  font-size: medium;
+  text-transform: capitalize;  
+}
+
+.sponsor img{
+  border-left: 3px solid #7e3e97;
+  margin-left: 10px;
+}
+/*===advertiesment section styling end===*/
 
 /*=================================
   Header styling ends here
 =================================*/  
-
-
-
-/*===advertiesment article start===*/
-.advertisement .wrapper{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0px 10px 0px;
-}
-.features a:after{
-  content:"\f054";
-  font-family: FontAwesome;
-}
-.features a{
-  text-transform: uppercase;
-  color: black;
-  font-size: small;
-  font-weight: bold;
-  margin-top: 20px;
-}
-.features a:hover{color: #b11010;}
-.sponsor{
-  text-transform: capitalize;
-  font-size: small;
-  color: rgb(124, 122, 120);
-  display: flex;
-}
-.sponsor span{margin-top: 45px;}
-.sponsor figure{
-  border-left: 2px solid #5b12d1;
-  margin-left: 10px;
-}
-/*===advertiesment article end===*/
 
 /*=================================
   main styling starts here
 =================================*/
 
 /*===banner section start===*/
+.links li{ padding: 10px 10px; }
+.banner a{ text-indent: -9999px; }
+.links a:hover,.content a:hover{ color:#e8e861; }
+
 .banner{
-  background-color: black;
-  color: #ffffff;
+  padding: 50px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: black;
+  color: #fff;  
 }
+
 .links{
   display: inline-block;
   position: absolute;
   bottom: 30px;
   left: 20px;
 }
-.banner_image{
-  display: inline-block;
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
-}
+
 .links a{
-  color:#ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 100%;
   padding: 10px;
-  margin-top: 470px;
-  margin: 5px 5px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  color:#fff;
 }
-.links span{
-  position: absolute;
-  transform: translate(-900px,-900px);
-}
+
 .content{
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 50%;
+  text-align: center;  
 }
+
 .content h2{
-  text-transform: capitalize;
+  margin-bottom: 10px; 
   font-weight: bold;
   font-size: 50px;
-  margin-bottom: 10px;
+  text-transform: capitalize; 
 }
 .content span{
-  text-transform: capitalize;
-  font-size: 20px;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  margin: 10px 0px 70px;
   display: block;
+  font-size: 25px;
+  text-transform: capitalize;   
 }
+
 .content a{
-  color: #ffffff;
   position: absolute;
   bottom: 30px;
+  font-size: 25px;
+  color: #fff;
 }
-.links a:hover,.content a:hover{color:rgb(226, 223, 60);}
 
-.banner_image{margin-top: 350px;}
+.banner_image{
+  position: absolute;
+  bottom: 30px; 
+  right: 20px; 
+}
 /*===banner section end===*/
 
 /*===clients section start===*/
 .clients{
-  padding: 100px 0px 100px 0px;
-  background-color: rgb(226, 222, 216);
+  padding: 100px 0px;
+  background-color: #f5f5f5;
 }
+
 .clients .wrapper{
   display: flex;
   justify-content: space-around;
 }
-
 /*===clients section end===*/
 
 /*===information article start===*/
-.information{
-  margin-bottom: 50px;
+.information{ padding-bottom: 50px; }
+.information_two a:last-child{ float: right; }
+
+.information h3{
+  width: 70%;
+  margin: 50px 0px 30px;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-.button{
-  text-transform: uppercase;
-  padding: 10px;
-  border: 2px solid #92ebe6;
-  border-radius: 20px;
-  color: black;
-  font-size: small;
-  font-weight: bold;
-  width: 170px;
-  text-align: center;
-  margin-top: 30px;
-}
-.button:hover{
-  background-color: #b11010;
-  color: #ffffff;
-}
-.information h3{
-  text-transform: capitalize;
-  font-size: 35px;
-  font-weight: bold;
-  width: 70%;
-  margin-bottom: 30px;
-  margin-top: 50px;
-}
 .information p{
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 30px;
   max-width: 90%;
   color: #474444;
+}
+
+.button{
+  padding: 20px 50px;
+  border: 2px solid #92ebe6;
+  border-radius: 30px;
+  margin-top: 30px;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; 
+}
+
+.button:hover{
+  background-color: #ff0000;
+  color: #fff;
 }
 
 .information_one a:after,.information_two a:first-of-type:after{
   content:" \f067";
   font-family: FontAwesome;
 }
+
 .information_two a:last-child:after{
   content:" \f019";
   font-family: FontAwesome;
 }
-.information_two a:last-child{
-  width: 20%;
-  float: right;
-}
 /*===information article end===*/
 
 /*===articles article start===*/
-.articles{margin: 60px 0px 60px 0px;}
-.article_one,.article_two{padding: 30px 30px;}
+.articles .heading{ display: flex; }
+.article_one,.article_two{ padding: 20px 20px; }
+.heading figure img{ margin-left: 30px; }
+.articles img{ margin:15px 0px; }
+
 .articles .wrapper{
-  background-color: rgb(226, 222, 216);
+  margin-bottom: 80px;
+  padding: 25px 80px;
   display: flex;
   justify-content: space-around;
-  padding: 50px 0px 50px 0px; 
+  background-color: #eeeeee;  
 }
-.articles .heading{  display: flex;}
+
 .heading span{
-  font-size: small;
   margin-top: 40px;
-}
-.heading figure img{margin-left: 30px;}
-.heading img{
-  border-left: 2px solid #5b12d1;
-  margin-left: 60px;
-}
-.articles span{
-  text-transform: capitalize;
+  font-size: medium; 
   font-weight: bold;
+  text-transform: capitalize; 
 }
-.articles img{
-  margin:10px 0px 10px 0px;
-}
+
+.heading img{
+  border-left: 3px solid #7e3e97;
+  margin-left: 60px;
+} 
+
 .article_content span{
-  font-size: 15px;
-  color: #474444;
+  margin-bottom: 30px;
   display: block;
-  font-size: small;
-}
+  color: #474444;
+  font-size: 20px;
+} 
+
 .articles a:after{
   content:" \f054";
   font-family: FontAwesome;
@@ -371,69 +371,81 @@ header .navigation:after{
 /*=================================
   footer styling starts here
 =================================*/ 
+footer a:hover{color: #e8e861;}
+.block_one{width: 20%;}
+.block_two{width: 70%;}
+
 footer{
-  background-color: rgb(37, 36, 36);
-  border-top: 7px solid #b11010;
-  padding: 30px 0px 30px 0px; 
+  padding: 30px 0px;
+  border-top: 7px solid #ec190b;
+  background-color: #121212;  
 }
-footer a:hover{color: rgb(226, 223, 60);}
+
 .footer_links{
-  display: flex;
+  padding: 40px 0px;
   border-bottom: 2px solid #474444;
+  display: flex; 
   justify-content: space-between;
 }
+
 .block_two,.block_three{
-  border-left:2px solid #474444;
   padding-left: 20px;
+  border-left:2px solid #474444; 
 }
 
 .block_one li,.block_three li{
-  display: block;
   margin-bottom: 20px;
+  display: block;  
 }
+
 .block_one a{
   color: #e7e1e1;
-  text-transform: capitalize;
+  font-size: 20px;
+  text-transform: capitalize; 
 }
+
 .block_two li{
+  margin-bottom: 20px;
   display: block;
   color: #a09c9c;
-  font-size: small;
-  text-transform: capitalize;
+  font-size: medium; 
   font-weight: bold;
-  margin-bottom: 20px;
+  text-transform: capitalize; 
 }
 
 .block_two a{
-  color: #ffffff;
-  font-size: 15px;
   padding-right: 25px;
+  color: #fff;
+  font-size: 15px;  
+  /*text-indent: -9999px;*/
 }
-.block_two a span{
-  position: absolute;
-  transform: translate(-900px,-900px);
+
+.block_three{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 .block_three a{
-  font-size: small;
-  text-transform: capitalize;
   color: #a09c9c;
+  font-size: 15px;
+  text-transform: capitalize;  
 }
-.block_one{width: 20%;}
-.block_two{width: 70%;}
-.block_three{width: 30%;}
 
 .copyright{
   text-align: center;
   margin-top: 20px;
 }
-.copyright > p{color: #a09c9c;}
-.copyright p:last-child{
-  font-style: italic;
-  font-size: small;
+
+.copyright > p{
   color: #a09c9c;
+  font-size: 20px;
 }
 
-
+.copyright p:last-child{
+  color: #a09c9c;
+  font-style: italic;
+  font-size: 20px;  
+}
  /*=================================
   footer styling ends here
 =================================*/ 
